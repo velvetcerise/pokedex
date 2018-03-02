@@ -33,41 +33,45 @@
  //   });
 //limpiando callbacks
 //USAR FETCH, PUNTOS EXTRAS
-let container = document.getElementById('container')[0];
+let container = document.getElementById('container') ;
+// console.log(container)
   function handleResponse(data){
       let getEntrie = data.pokemon_entries;
       //pintar fuera de mi for o loop infinito
       let getCard = ' ';
-      console.log(getEntrie);
+    //   console.log(getEntrie);
       let getPkmnInfo =  getEntrie.forEach(element =>{
         let getSpecies = element.pokemon_species;
-        console.log(getSpecies);
+        // console.log(getSpecies);
         let getName = getSpecies.name;
-        console.log(getName);
+        // console.log(getName);
         let getUrl = getSpecies.url;
-        console.log(getUrl);
+        // console.log(getUrl);
 
 //     //painting   
       getCard += 
       
-    `<div class="col s3 m7">
-        <div class="card">
-            <div class="card-image">
-            <img src=" https: //dummyimage.com/280x300/d13d1f/ffffff.png&text=pokemon  alt="muestra">
-            <span class="card-title">${getUrl}</span>
-            </div>
-            <div class="card-content">
-            <p> ${getName} </p>
-            </div>
-            <div class="card-action">
-            <a href="#">This is a link</a>
+        `<div class = 'row'>
+        <div class="col s3 m7">
+            <div class="card">
+                <div class="card-image">
+                    <img src=" https://dummyimage.com/280x300/d13d1f/ffffff.png&text=pokemon  alt="muestra">
+                    <span class="card-title">${getUrl}</span>
+                </div>
+                <div class="card-content">
+                    <p> ${getName} </p>
+                </div>
+                <div class="card-action">
+                     <a href="#">This is a link</a>
+                </div>
             </div>
         </div>
         </div>`
       })
 
 
-      container.html = getCard;
+      container.innerHTML = getCard;
+      console.log(getCard)
     }
       //objeto de configuración
       //request
