@@ -21,11 +21,11 @@
        e.preventDefault();
 
        var searchInf = $('#keyword');
-       var getPkmn = searchInf.val; 
-        console.log(searchInf);
+       var getPkmn = searchInf.val(); 
+        console.log(getPkmn);
       //objeto de configuración
       //request
-        $.ajax({ url: `https://pokeapi.co/api/v2/pokedex/1/${getPkmn}`
+        $.ajax({ url: `https://pokeapi.co/api/v2/pokemon/${getPkmn}`
         }).done(handleResponse); //el método .done, sustituye onload()
 
        
