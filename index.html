@@ -7,24 +7,38 @@
     <link rel="stylesheet" href="css/main.css">
     <!--Materializw-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     <title>Pokedex</title>
 </head>
 
 <body>
     <header class="head">
         <div class="first-container">
-            <h1>Pokedex</h1>
-            <form action="" id="searcher">
-                <label for="search-keyword" class="visuallyhidden">¿Qué pokemón estás buscando?</label>
-                <input id="keyword" type="text" name="search-keyword" placeholder="escribe el nombre, ej: pikachu, vulpix" required>
-                <input id="submit-btn" type="submit" value="Submit">
-            </form>
+            <div class="row">
+                <div class="col xl12 center">
+                    <!--Tittle-->
+                    <h1 id="head-title" class="center">Pokedex</h1> <span><img  id="pikachu" class="center" src="assets/images/pikachu.png" alt=""></span>
+                    <!-- <form action="" id="searcher">
+                    <label for="search-keyword" class="visuallyhidden">¿Qué pokemón estás buscando?</label>
+                    <input id="keyword" type="text" name="search-keyword" placeholder="escribe el nombre, ej: pikachu, vulpix" required>
+                    <input id="submit-btn" type="submit" value="Submit">
+                    </form> -->
+                </div>     
+            </div>
         </div>
     </header>
-    <div id="pokemon" class="pokemon">
-        <ul id="pokemmon-view"></ul>
-    </div>
-    <section id="container"></section>
+        <div class = 'row'>
+            <div class="col xl12">
+                    <div id="pokemon" class="pokemon"> 
+                        <ul id="pokemmon-view"></ul>
+                            <section id="container">
+                            hola
+                            </section>
+                    </div>
+            </div>
+        </div>
+       
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script> -->

@@ -1,0 +1,19 @@
+#head-title {
+    font-family: 'Luckiest Guy', cursive;
+    color: #69AACB; /*#FDC207;*/
+    /* text-shadow: -1px 12px 17px #32498E; */
+}
+
+#pikachu {
+    margin-top: -25vh;
+    margin-left: 35vh;
+    height: 42vh;
+}
+
+#pkmn-card {
+    margin-bottom: 8vh;
+}
+
+#pokeball {
+    height: 12vh;
+}
