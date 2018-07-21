@@ -38,7 +38,7 @@ let container = document.getElementById('container') ;
         let getEntrie = data.pokemon_entries;
         //pintar fuera de mi for o loop infinito
         let getCard = ' ';
-        //   console.log(getEntrie);
+           console.log(getEntrie);
         let getPkmnInfo =  getEntrie.forEach(element =>{
         let getSpecies = element.pokemon_species;
         // console.log(getSpecies);
